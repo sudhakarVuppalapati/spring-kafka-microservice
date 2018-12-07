@@ -5,3 +5,9 @@ eureka:
       defaultZone: http://52.52.188.145:8761/eureka/
     register-with-eureka: false
     fetch-registry: false
+spring:
+  kafka:
+    bootstrap-servers: 52.52.188.145:9092
+    consumer:
+      group-id: embedded1
+      auto-offset-reset: earliest
